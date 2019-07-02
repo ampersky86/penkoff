@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-color: #ffffff
+}
+
+.header{
+    background-color: #f4f4f4
+}
+
+.conteiner{
+    max-width: 1107px;
+    border: 1px solid red;
+    margin: auto;
+}
