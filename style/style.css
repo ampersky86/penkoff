@@ -1,14 +1,112 @@
 body {
     margin: 0;
-    background-color: #ffffff
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
 }
 
 .header{
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
-.conteiner{
+.conteiner {
     max-width: 1107px;
-    border: 1px solid red;
     margin: auto;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #95989a;
+}
+
+.nav {
+    flex-basis: 80%;
+}
+
+.nav__link {
+    font-size: 12px;
+    color: #95989a;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 21px;
+}
+
+.login {
+    font-size: 12px;
+    font-weight: 400;
+    color: #95989a;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tabs  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+
+}
+
+.tabs-logo {
+    font-size: 20px;
+    color: #95989a;
+    font-weight: 700;
+}
+
+.tabs-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;  
+}
+
+.tabs-menu__item {
+    margin-left: 15px;
+}
+
+.tabs-menu__item:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fcde29;
+}
+
+.tabs-content {
+    background: #f7f7f7 url('https://i.imgur.com/rcdSTXs.png') no-repeat bottom right 135px;
+    border-radius: 10px;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 43px;
+}
+
+.tabs-content__title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.tabs-content__text {
+    font-size: 18px;
+    max-width: 320px;
+    margin-bottom: 90px;
+    font-weight: 400;
+}
+
+.button {
+    padding: 16px 33px;
+    background-color: #fcde29;
+    border-radius: 6px;
+    border:none;
+    font-size: 16px;
+    font-weight: 700;    
 }
