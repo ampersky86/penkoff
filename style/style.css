@@ -1,11 +1,20 @@
+* {
+    box-sizing: content-box;
+}
+
 body {
     margin: 0;
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
     color: #272727;
+    padding-top: 60px;
 }
 
 .header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
     background-color: #f4f4f4;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -71,14 +80,24 @@ body {
 
 .tabs-menu__item {
     margin-left: 15px;
+    position: relative;
 }
 
 .tabs-menu__item:after {
-    content: '';
+    content:'';
     display: block;
-    width: 100%;
-    height: 1px;
+    position: absolute;
+    bottom: 0;
+    width:0%;
+    left:0;
+    height: 4px;
     background-color: #fcde29;
+    transform: translateY(20px);
+    transition: width 0.2s;
+}
+
+.tabs-menu__item:hover:after {
+    width:100%;
 }
 
 .tabs-content {
@@ -88,6 +107,7 @@ body {
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 43px;
+    margin-bottom: 65px;
 }
 
 .tabs-content__title {
@@ -110,3 +130,112 @@ body {
     font-size: 16px;
     font-weight: 700;    
 }
+
+.section-title{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section__title {
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 23px;
+}
+
+.card-full {
+    padding-top: 23px;
+    padding-left: 28px;
+    margin-bottom: 40px;
+}
+
+.card__title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0px;
+}
+
+.card__text {
+    max-width: 480px;
+    font-size: 16px;
+    padding-bottom: 18px;
+}
+
+.card_img {
+    background-image: url('https://i.imgur.com/sgFNnoU.png');
+    background-repeat: no-repeat;
+    background-position: center right 80px;    
+}
+
+.card-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__card:last-child {
+    margin-right: 0;
+}
+
+.section__card {
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+/* .section-title {
+    font-size: 30px;
+    font-weight: 400;
+} */
+
+.best__title {
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;   
+}
+
+.best__subtitle {
+    margin-bottom: 30px;
+}
+
+.best-card {
+    width: 240px;
+    height: 260px;
+    padding: 0;
+    position: relative;
+}
+
+.best-card__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.best-card__image_left {
+    left:0;
+    transform: translateX(0);
+}
+
+.best-card__image_right {
+    right:0;
+    transform: translateX(-30%);
+}
+
+.best-card__text {
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+
