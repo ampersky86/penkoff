@@ -1,5 +1,5 @@
-* {
-    box-sizing: content-box;
+*, *:after, *:before {
+    box-sizing: border-box;
 }
 
 body {
@@ -238,9 +238,12 @@ body {
 }
 
 .form {
-    border: 1px solid red;
     max-width:600px;
     margin: auto;
+}
+
+.delivery__form {
+    margin-top:60px;
 }
 
 .input {
@@ -248,11 +251,142 @@ body {
     border: none;
     padding: 20px;
     width: 100%;
-    
+    border-radius: 7px;    
 }
 
 .form__input {
-    margin-bottom: 30px;
+    margin-bottom: 30px;    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-100 {
+    flex-basis: 100%;
+}
+
+.col-50 {
+    flex-basis: 49%;
+}
+
+.button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    padding: 60px 0;    
+}
+
+.footer__text {
+    max-width: 670px;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
 }
 
 
+@media (max-width: 1200px) {
+    .conteiner {
+        max-width: 960px;
+        width: 90%;
+    }
+    .best-card {
+        width: 200px;
+        height: 250px;
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .conteiner {
+        max-width: 760px;
+    }
+    .tabs-content {
+        background-size: 200px;
+    }
+    .card_img {
+        background-size: contain;
+        background-position: bottom right 0px;
+    }
+    .card__text {
+        max-width: 300px;   
+    }
+    .card-wrap {
+        flex-wrap: wrap;
+    }
+    .card-block {
+        flex-basis: 50%;    
+    }
+    .best__card-block {
+        margin-bottom: 30px;
+    }
+    .best-card {
+        margin: auto;
+    }
+}
+@media (max-width: 768px) {
+    .conteiner {
+        max-width: 85%;       
+    }
+    .tabs-content {
+        background-size: 180px;
+        background-position: bottom right 50px;
+    }
+    .card_img {
+        background-image: none;
+    }
+    .section__card {
+        margin-right: 0;
+        flex-basis: 100%;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .conteiner {
+        max-width: 85%;       
+    }
+    .nav {
+        display: none;
+    }
+    .tabs-menu__item {
+        font-size: 12px;
+    }
+    .tabs-logo {
+        display: none;
+    }
+    .tabs-content__title {
+        font-size: 24px;
+    }
+    .tabs-content__text {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .tabs-content {
+        background-image: none;
+    }
+    .section-title {
+        font-style: 20px;
+    }
+    .col-50 {
+        flex-basis: 100%;
+    }
+    .form__input {
+        margin-bottom: 15px;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .button-block {
+        justify-content: center;
+    }
+    .delivery__form {
+        margin-top: 20px;
+    }
+
+}
