@@ -186,11 +186,6 @@ body {
     margin-right: 50px;
 }
 
-/* .section-title {
-    font-size: 30px;
-    font-weight: 400;
-} */
-
 .best__title {
     margin-bottom: 10px;
 }
@@ -236,4 +231,28 @@ body {
     margin: auto;
     margin-top: 20px;
 }
+
+.delivery {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.form {
+    border: 1px solid red;
+    max-width:600px;
+    margin: auto;
+}
+
+.input {
+    background-color: #f7f8ff;
+    border: none;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.form__input {
+    margin-bottom: 30px;
+}
+
 
